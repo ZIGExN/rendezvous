@@ -5,7 +5,7 @@ volumes:
 
 services:
   db:
-    image: mysql:5.7
+    image: mysql:5.６
     ports:
       - "3306:3306"
     volumes:
