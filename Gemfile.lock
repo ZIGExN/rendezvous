@@ -152,7 +152,7 @@ GEM
       activesupport (>= 4.2.0)
     gmail_xoauth (0.4.2)
       oauth (>= 0.3.6)
-    google-protobuf (3.6.1)
+    google-protobuf (3.6.1-x86_64-linux)
     gritter (1.1.0)
     guard (2.15.0)
       formatador (>= 0.2.4)
@@ -208,7 +208,7 @@ GEM
     kgio (2.11.2)
     launchy (2.4.3)
       addressable (~> 2.3)
-    libv8 (3.16.14.19)
+    libv8 (3.16.14.19-x86_64-linux)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -520,7 +520,7 @@ DEPENDENCIES
   validates_email_format_of (~> 1.5.3)
 
 RUBY VERSION
-   ruby 2.2.3p173
+   ruby 2.4.10p364
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
