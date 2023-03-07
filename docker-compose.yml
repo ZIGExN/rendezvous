@@ -1,0 +1,32 @@
+version: "3.9"
+
+volumes:
+  mysql:
+
+services:
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_ROOT_PASSWORD: ''
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/myapp
+    environment:
+      RAILS_ENV: production
+      RAILS_LOG_TO_STDOUT: 'true'
+      RAILS_SERVE_STATIC_FILES: 'true'
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ""
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 8080 -b '0.0.0.0'"    
+    depends_on:
+      - db
