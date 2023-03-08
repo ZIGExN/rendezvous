@@ -1,16 +1,21 @@
 default: &default
   adapter: mysql2
-  encoding: utf8
+  encoding: utf8mb4
   pool: 5
-  username:
+  username: root
   password:
   host: localhost
 
 development:
-  url: <%= ENV['DATABASE_URL'] %>
+  <<: *default
+  database: rendezvous
 
 test:
   url: <%= ENV['DATABASE_URL'] %>
 
 production:
-  url: <%= ENV['DATABASE_URL'] %>
+  <<: *default
+  database: rendezvous
+  username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
+  socket: <%= ENV['MYSQL_SOCKET'] %>

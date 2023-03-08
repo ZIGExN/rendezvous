@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-#ruby '2.2.3'
-ruby '~> 2.3'
+ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.4'
@@ -133,7 +132,7 @@ gem 'paper_trail', '~> 3.0.0'
 
 gem 'aws-sdk', '1.39.0'
 
-gem 'newrelic_rpm', '~> 3.14.0'
+#gem 'newrelic_rpm', '~> 3.14.0'
 
 gem 'breadcrumble', '~> 4.1.0'
 
@@ -144,7 +143,6 @@ gem 'annotate', "~> 2.6.5"
 gem 'kaminari', '~> 1.0.0.alpha'
 
 gem 'jwt', '>= 2.0'
-
 
 # Optional
 
