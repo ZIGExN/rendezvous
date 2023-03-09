@@ -32,3 +32,5 @@
 
 .rbenv-gemsets
 .ruby-version
+
+.vscode
