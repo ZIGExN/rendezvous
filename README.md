@@ -1,5 +1,7 @@
-rendezvous
-==========
+# [DEPRECATED]rendezvous
+# ↓
+
+# [ZIGExN/z-rendezvous](https://github.com/ZIGExN/z-rendezvous)
 
 [![Build Status](https://travis-ci.org/ZIGExN/rendezvous.png)](https://travis-ci.org/ZIGExN/rendezvous)
 [![Coverage Status](https://coveralls.io/repos/ZIGExN/rendezvous/badge.png)](https://coveralls.io/r/ZIGExN/rendezvous)
